@@ -1,0 +1,83 @@
+/* Contêiner principal para o título e os cartões */
+.weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Fundo azul claro */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título da previsão */
+  .weather-info h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Contêiner para os cartões de previsão */
+  .forecast-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  /* Estilo individual para cada cartão */
+  .daily-forecast {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 15px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Efeito de hover no cartão */
+  .daily-forecast:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Nome do dia e data */
+  .daily-forecast p:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00796b; /* Verde escuro */
+    margin-bottom: 10px;
+  }
+  
+  /* Ícone do clima */
+  .daily-forecast img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Descrição do clima */
+  .daily-forecast p:nth-child(3) {
+    font-size: 0.9rem;
+    color: #555; /* Cinza escuro */
+    margin: 5px 0;
+  }
+  
+  /* Temperatura */
+  .daily-forecast p:nth-child(4) {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333; /* Cinza mais escuro */
+  }
+  
+  /* Layout responsivo */
+  @media (max-width: 768px) {
+    .forecast-container {
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .daily-forecast {
+      width: 100px;
+    }
+  }
+  
